@@ -45,8 +45,7 @@ python main.py
 ```
 
 
-7. Rodando pipelines
+7. Rodando testes
 ```bash
 pytest tests/test.py
 ```
-pytest tests/test.py
