@@ -5,12 +5,12 @@
  
 1. Clonando repositório para sua máquina
 ```bash
-git clone https://github.com/AironMattos/sicredi_data_challenge.git
+git clone https://github.com/AironMattos/sicredi_data_engineering_challenge.git
 ```
 
 2. Abrindo projeto
 ```bash
-cd hurb_data_engineering_challenge
+cd sicredi_data_engineering_challenge
 ```
 
 3. Criando e ativando ambiente virtual (via PowerShell)
