@@ -3,11 +3,11 @@
 
 Repositório com a solução para o desafio técnico de data engineer Sicredi.
 
-Neste desafio, o intuíto foi de modelar bases de dados em um banco SQL, inserir uma massa de dados nessas tabelas, e a partir desses dados já persistido, coletá-los para e criar uma nova visão dos dados agrupados, disponibilizando-os em um único arquivo CSV.  
+Neste desafio, o intuíto foi de modelar bases de dados em um banco SQL, inserir uma massa de dados nessas tabelas, e a partir desses dados já persistidos, coletá-los para criar uma nova visão dos dados agrupados, disponibilizando-os em um único arquivo CSV.  
 
-A ideia de arquitetura foi primeiramente, criar as tabelas necessárias em um banco de dados Postgres utilizando a biblioteca SQLAlchemy como sistema de ORM. Após essas tabelas estarem devidamente modeladas e criadas no banco de dados, o próximo passo foi desenvolver um script para gerar amostras de dados para popular as tabelas. Nesse caso, utilizei a biblioteca Faker e envolepei todo o código de geração de dados em uma classe Python. Por último, utilizei Pyspark para persistir essas amostras no banco de dados e posteriormente, extrair dados de todas as tabelas, relacionando-as e gerendo uma visão única.
+A ideia de arquitetura foi primeiramente, criar as tabelas necessárias em um banco de dados Postgres, utilizando a biblioteca SQLAlchemy como sistema de ORM. Após essas tabelas estarem devidamente modeladas e criadas no banco de dados, o próximo passo foi desenvolver um script para gerar amostras de dados para popular as tabelas. Nesse caso, utilizei a biblioteca Faker e envolepei todo o código de geração de dados em uma classe Python. Por último, utilizei Pyspark para persistir essas amostras no banco de dados e posteriormente, extrair dados de todas as tabelas, relacionando-as e gerendo uma visão única.
 
-Ademais, foi utilizado a biblioteca Pytest para estar criando rotinas de teste unitário em cima do código desenvolvido, e também, disponibilizado um arquivo yml como uma imagem de um container PostgreSQL.
+Ademais, foi utilizado a biblioteca Pytest para estar criando rotinas de testes de unidade em cima do código desenvolvido, e também, disponibilizado um arquivo .yml como uma imagem de um container PostgreSQL.
 
 
 # Como Utilizar
