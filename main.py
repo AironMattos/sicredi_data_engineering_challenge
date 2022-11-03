@@ -10,7 +10,8 @@ def etl():
     print('---------------')
 
     # Insert sample data into database tables
-    insert_data_to_db(30)
+    # Pass in the insert_data_to_db() function the number of records you want to create
+    insert_data_to_db(1000)
     print('Sample data has been inserted into the database')
     print('---------------')
 
