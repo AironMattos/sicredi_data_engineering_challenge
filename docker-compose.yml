@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+    database:
+        image: postgres
+        container_name: 'postgres_container'
+        environment:
+            POSTGRES_USER: root
+            POSTGRES_PASSWORD: root
+            POSTGRES_DB: sicredi_data_challenge
+        ports:
+            - '5432:5432'
+        volumes:
+            - './.postgres:/var/lib/postgresql/data/'
